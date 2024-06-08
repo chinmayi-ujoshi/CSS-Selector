@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>Slide the slider to chance the CSS of the image below!</h1>
+    <h1>Slide the slider to change the CSS of the image below!</h1>
     <div class="container">        
         <span class="heading">Did someone say Peekabooooo?</span>
         <div class="css-controller">
@@ -24,6 +24,8 @@
                 value="50"
                 data-sizing="%"
             >
+            <span id="width-value">50%</span>
+
 
             <label for="border">Border Radius</label>
             <input type="range"
@@ -34,6 +36,7 @@
                 value="5"
                 data-sizing="px"
             >
+            <span id="border-radius-value">5px</span>
 
             <label for="padding">Padding</label>
             <input type="range"
@@ -44,6 +47,7 @@
                 value="0"
                 data-sizing="px"
             >
+            <span id="padding-value">0px</span>
 
             <label for="blur">Blur</label>
             <input type="range"
@@ -54,6 +58,8 @@
                 value="0"
                 data-sizing="px"
             >
+            <span id="blur-value">0px</span>
+
         </div>
         <img src="https://cdn.pixabay.com/photo/2023/11/01/07/56/ghost-8356785_1280.png" alt="Image from Pixabay" width="200" height="200">
     </div>
