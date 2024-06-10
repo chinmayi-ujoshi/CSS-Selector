@@ -8,6 +8,11 @@ function update() {
     const suffix = this.dataset.sizing || '';
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     updateValueDisplay(this); // Update the displayed value
+
+    // Update heading color if the base color input changes
+    if (this.name === 'base') {
+        document.querySelector('.heading').style.color = this.value;
+    }
 }
 
 function updateValueDisplay(input) {
